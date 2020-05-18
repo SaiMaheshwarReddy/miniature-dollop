@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" name="color" placeholder="enter color" id="color">
+    <button id="btn" style="cursor: pointer;">Change Background</button>
+    <script>
+            
+            var btn = document.getElementById('btn');
+
+            btn.addEventListener('click', changeColor);
+
+            function changeColor(){
+                var color = document.getElementById('color').value;
+                                console.log(color);
+                document.body.style.backgroundColor= "black";
+            };
+            
+            
+    </script>
+</body>
+</html>
